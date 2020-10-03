@@ -5,13 +5,27 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/doc_search"
+            android:id="@+id/doc_add_schedule"
             android:icon="@drawable/ic_search"
-            android:title="Search" />
+            android:title="Add Schedule" />
         <item
-            android:id="@+id/doc_avalbitility"
+            android:id="@+id/doc_manage_schedule"
             android:icon="@drawable/ic_search"
-            android:title="Search" />
+            android:title="Manage Schedule" />
+
+        <item
+            android:id="@+id/doc_view_appointment"
+            android:icon="@drawable/ic_search"
+            android:title="View Appointment" />
+
+        <item
+            android:id="@+id/doc_view_feedback"
+            android:icon="@drawable/ic_search"
+            android:title="View Feedback" />
+        <item
+            android:id="@+id/doc_logout"
+            android:icon="@drawable/ic_search"
+            android:title="LogOut" />
 
     </group>
 

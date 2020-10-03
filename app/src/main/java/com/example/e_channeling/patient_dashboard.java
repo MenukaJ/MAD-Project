@@ -51,10 +51,7 @@ public class patient_dashboard extends AppCompatActivity implements NavigationVi
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.pa_cancellBookingy:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
-                        new SearchFragment()).commit();
-                break;
+
             case R.id.pa_channel:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
                         new ChannelDoctorFragment()).commit();

@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new SearchFragment()).commit();
-            navigationView.setCheckedItem(R.id.doc_search);
+                    new ManageScheduleFragment()).commit();
+            navigationView.setCheckedItem(R.id.doc_manage_schedule);
         }
     }
     @Override
@@ -52,10 +52,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.doc_search:
+
+            case R.id.doc_add_schedule:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SearchFragment()).commit();
+                        new AddScheduleFragment()).commit();
                 break;
+            case R.id.doc_manage_schedule:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ManageScheduleFragment()).commit();
+                break;
+
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
