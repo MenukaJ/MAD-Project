@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pa_channel"
+            android:icon="@drawable/ic_search"
+            android:title="Channel a Doctor" />
+        <item
+            android:id="@+id/pa_cancellBookingy"
+            android:icon="@drawable/ic_search"
+            android:title="Cancell Bokking" />
+        <item
+            android:id="@+id/pa_findDoctor"
+            android:icon="@drawable/ic_search"
+            android:title="Find Doctores" />
+        <item
+            android:id="@+id/pa_feedback"
+            android:icon="@drawable/ic_search"
+            android:title="Add Feedback" />
+        <item
+            android:id="@+id/pa_updateProfile"
+            android:icon="@drawable/ic_search"
+            android:title="Update Profile" />
+
+        <item
+            android:id="@+id/pa_logou"
+            android:icon="@drawable/ic_search"
+            android:title="Log Out" />
+    </group>
+
+
+
+</menu>

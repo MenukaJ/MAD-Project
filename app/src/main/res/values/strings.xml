@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">E_channeling</string>
+    <string name="login">Log In</string>
+    <string name="registerPea">Register as a Patient</string>
+    <string name="registerdoc">Register as a Doctor</string>
+    <string name="email">Enter a Email</string>
+    <string name="name">Enter a Name</string>
+    <string name="password">Enter a Password</string>
+
+    <string name="patientlogin">Patient LogIn</string>
+    <string name="doctorlogin">Doctor LogIn</string>
+    <string name="adminlogin">Admin LogIn</string>
 </resources>
