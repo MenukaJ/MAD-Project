@@ -10,4 +10,6 @@
     <string name="patientlogin">Patient LogIn</string>
     <string name="doctorlogin">Doctor LogIn</string>
     <string name="adminlogin">Admin LogIn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

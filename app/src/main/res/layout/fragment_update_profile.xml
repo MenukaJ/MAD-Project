@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".UpdateProfile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif"
+        android:text="Update Profile"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="serif"
+        android:hint="Name"
+        android:padding="8dp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="serif"
+        android:hint="Age"
+        android:padding="8dp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/edtPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="241dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="serif"
+        android:hint="Email"
+        android:padding="8dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/BtnSave"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="369dp"
+        android:background="@drawable/button_for_submit"
+        android:fontFamily="serif"
+        android:onClick="AddEmployee"
+        android:text="Update" />
+
+</RelativeLayout>

@@ -56,6 +56,23 @@ public class patient_dashboard extends AppCompatActivity implements NavigationVi
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
                         new ChannelDoctorFragment()).commit();
                 break;
+            case R.id.pa_feedback:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
+                        new PatientFeedback()).commit();
+                break;
+
+            case R.id.pa_cancellBookingy:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
+                        new CancellBooking()).commit();
+                break;
+            case R.id.pa_findDoctor:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
+                        new FindDoctorFreagment()).commit();
+                break;
+            case R.id.pa_updateProfile:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containers,
+                        new UpdateProfile()).commit();
+                break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

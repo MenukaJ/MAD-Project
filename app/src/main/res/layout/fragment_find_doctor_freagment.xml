@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindDoctorFreagment">
+
 
     <EditText
         android:id="@+id/edtName"
-        android:layout_width="246dp"
+        android:layout_width="393dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -17,20 +19,6 @@
         android:hint="Enter Doctor Name"
         android:padding="8dp"
         android:textColor="#fff" />
-
-    <Button
-        android:id="@+id/BtnSave"
-        android:layout_width="118dp"
-        android:layout_height="34dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_for_submit"
-        android:fontFamily="serif"
-        android:onClick="AddEmployee"
-        android:text="Add" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="250dp"
@@ -43,15 +31,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
-                android:text="Button" />
 
             <TextView
                 android:id="@+id/textView"
@@ -77,5 +56,4 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-
-</RelativeLayout>
+</FrameLayout>
