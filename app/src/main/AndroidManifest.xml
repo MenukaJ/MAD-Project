@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admin_login"></activity>
-        <activity android:name=".doctor_login"></activity>
+        <activity android:name=".admin_dashboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".admin_login" />
+        <activity android:name=".doctor_login" />
         <activity android:name=".first_view">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,13 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".patient_dashboard" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Patient_login"></activity>
-        <activity android:name=".PeatientSignup_form"></activity>
+        <activity
+            android:name=".patient_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Patient_login" />
+        <activity android:name=".PeatientSignup_form" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
