@@ -29,7 +29,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/edtName"
+                        android:id="@+id/editfeedbackName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
@@ -51,7 +51,7 @@
                         android:textColor="#fff" />
 
                     <EditText
-                        android:id="@+id/edtPosition"
+                        android:id="@+id/edtDoctorName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
@@ -62,7 +62,7 @@
                         android:textColor="#fff" />
 
                     <EditText
-                        android:id="@+id/edtAddress"
+                        android:id="@+id/feedback"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
@@ -73,7 +73,7 @@
                         android:textColor="#fff" />
 
                     <Button
-                        android:id="@+id/BtnSave"
+                        android:id="@+id/BtnAddFeedback"
                         android:layout_width="189dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
