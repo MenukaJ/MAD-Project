@@ -5,7 +5,7 @@
     >
 
     <EditText
-        android:id="@+id/edtName"
+        android:id="@+id/editfeedbackName"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         android:textColor="#fff" />
 
     <Button
-        android:id="@+id/BtnSave"
+        android:id="@+id/BtnAddFeedback"
         android:layout_width="118dp"
         android:layout_height="34dp"
         android:layout_alignParentTop="true"

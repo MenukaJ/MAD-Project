@@ -36,7 +36,7 @@
         android:text="Name" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_round"
@@ -50,7 +50,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button"
@@ -92,12 +92,14 @@
 
             app:srcCompat="@drawable/facebook" />
     </LinearLayout>
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonaddPetient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="96dp"
+        android:onClick="onclickSignUp"
         android:text="Button" />
 </RelativeLayout>
