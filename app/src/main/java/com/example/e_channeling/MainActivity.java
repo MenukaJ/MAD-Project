@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new ManageScheduleFragment()).commit();
-            navigationView.setCheckedItem(R.id.doc_manage_schedule);
+                    new AddScheduleFragment()).commit();
+            navigationView.setCheckedItem(R.id.doc_add_schedule);
         }
     }
     @Override
