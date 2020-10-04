@@ -33,7 +33,14 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:design:26.1.0'
     implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+< HEAD
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+==
+
+
+    implementation 'com.google.firebase:firebase-functions:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.5.0'
+> 146637062280613c34a2af230e4c8c04efc22a34
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -41,5 +48,5 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:23.1.0'
     //noinspection GradleCompatible
     implementation 'com.android.support:design:23.0.1'
-    implementation 'com.google.firebase:firebase-database:19.5.0'
+    //implementation 'com.google.firebase:firebase-database:19.5.0'
 }
