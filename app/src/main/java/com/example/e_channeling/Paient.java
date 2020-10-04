@@ -5,13 +5,15 @@ public class Paient {
     String name;
     String age;
     String email;
+    String password;
 
 
-    public Paient(String name, String age,String email) {
+    public Paient(String name, String age, String email,String password) {
 
         this.name = name;
         this.age = age;
         this.email = email;
+        this.password = password;
 
 
     }
@@ -20,6 +22,13 @@ public class Paient {
 
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getAge() {
         return age;

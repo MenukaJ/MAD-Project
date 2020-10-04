@@ -20,12 +20,13 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editfeedbackName"
+        android:id="@+id/editfeedbacknameget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="94dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="137dp"
         android:background="@drawable/button_round"
         android:fontFamily="serif"
         android:hint="Name"
@@ -33,12 +34,12 @@
         android:textColor="#fff" />
 
     <EditText
-        android:id="@+id/edtAge"
+        android:id="@+id/edtAgeget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/button_round"
         android:fontFamily="serif"
         android:hint="Age"
@@ -46,12 +47,13 @@
         android:textColor="#fff" />
 
     <EditText
-        android:id="@+id/edtDoctorName"
+        android:id="@+id/editEmailget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="241dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="278dp"
         android:background="@drawable/button_round"
         android:fontFamily="serif"
         android:hint="Email"
@@ -70,7 +72,19 @@
         android:layout_marginTop="369dp"
         android:background="@drawable/button_for_submit"
         android:fontFamily="serif"
-        android:onClick="AddEmployee"
         android:text="Update" />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/button_for_submit"
+        android:layout_marginEnd="44dp"
+        android:text="Show" />
 
 </RelativeLayout>
