@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 import java.util.Calendar;
 
 public class AddScheduleFragment extends Fragment {
@@ -31,10 +32,13 @@ public class AddScheduleFragment extends Fragment {
     Button submit;
     Spinner category;
     Spinner hospital;
-    DatabaseReference rootRef, demoRef;
+   // DatabaseReference rootRef, demoRef;
+   DatabaseReference reff;
+
+
 
     EditText edittext;
-    Schedule schedule = new Schedule();
+
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -50,16 +54,9 @@ public class AddScheduleFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
         super.onViewCreated(view, savedInstanceState);
-        rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Schedule");
-        edittext = (EditText)view.findViewById(R.id.editTextDate3);
-        edittext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                showDatePicker();
-            }
-        });
+//        rootRef = FirebaseDatabase.getInstance().getReference();
+//        demoRef = rootRef.child("Schedule");
+
 
         date =(EditText)view.findViewById(R.id.editTextDate3);
         submit = (Button) view.findViewById(R.id.save);
@@ -69,8 +66,8 @@ public class AddScheduleFragment extends Fragment {
         to = (EditText)view.findViewById(R.id.editTextTime2);
 
 
-
-        submit.setOnClickListener(new View.OnClickListener(){
+        reff = FirebaseDatabase.getInstance().getReference().child("Schedule");
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -81,13 +78,15 @@ public class AddScheduleFragment extends Fragment {
                 String cat = category.getSelectedItem().toString();
                 String dates = date.getText().toString();
 
+                Schedule schedule = new Schedule();
                 schedule.setDate(dates);
                 schedule.setCategory(cat);
                 schedule.setFrom(fromTime);
                 schedule.setTo(toTime);
                 schedule.setHospital(hos);
 
-                demoRef.push().setValue(schedule);
+                reff.setValue(schedule);
+             //   demoRef.push().setValue(schedule);
 //                        .addOnSuccessListener(new OnSuccessListener<Void>() {
 //                    @Override
 //                    public void onSuccess(Void aVoid) {
@@ -101,7 +100,14 @@ public class AddScheduleFragment extends Fragment {
 //                });
             }
         });
-
+        edittext = (EditText)view.findViewById(R.id.editTextDate3);
+        edittext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                showDatePicker();
+            }
+        });
 
     }
 
